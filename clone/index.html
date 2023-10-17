@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css\style.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellcome to kokoa Talk</title>
+    <title>Wellcome to kakao Talk</title>
 </head>
 <body>
-    
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        
+        <div class="status-bar__column">
+            <span>999%</span>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+    <header class="wellcome-header">
+        <h1 class="wellcome-header__title">Welcome to KakaoClone</h1>
+        <p class="wellcome-header_text">If you have a Kakao Account, log in with your email or phone number</p>
+    </header>
+    <form id="login-form">
+        <input type="text" placeholder="Email or Phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <a href="#">Find Kakao Account or Password</a>
+    </form>
 </body>
+<script src="https://kit.fontawesome.com/85d4a578f5.js" crossorigin="anonymous"></script>
 </html>
 
 <!-- 
     웹사이트에서 index.html을 먼저 찾아봄
     VS에서 시작시 ! 입력하면 요약된포맷이 나옴
+
+    BEM (Block Element Modifier) Mdn을 참고
 -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+            @keyframes aniExample{
+                0%{
+                    transform:rotateX(0deg) translateX(-25vh);
+                }
+                50%{
+                    transform:rotateX(180deg) translateX(25vh);
+                    border-color: chartreuse;
+                }
+                100%{
+                    transform:rotateX(360deg) translateX(-25vh);
+                }
+            }
+            img{
+                border: 5px solid black;
+                border-radius: 50%;
+                transition:all 2s ease-in-out;
+                animation: aniExample 2s ease-in-out infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="img\image.jpeg">
+    </body>
+</html>
+
+<!--
+애니메이션 만들기
+@keyframes 애니메이션 이름 {
+from{}
+to {}
+}
+
+사용하기
+img {
+animation : 애니메이션 이름 재생시간 옵션
+}
+무한으로 반복되게 하려면 뒤에 infinite를 붙여준다.
+
+- from to 말고, 1,2,3,4,5...10 혹은 0% 25% 50% 75% 100% 같이 여러 단계로 나뉘어 
+애니매이션을 만들 수 있다.
+- 다른 property들도 애니매이션으로 만들 수 있다. 꼭 transform만 써야하는 건 아니지만, 
+transform을 쓰는걸 권한다. 일부 property는 애니매이션이 잘 안되기 때문이다.
+
+CSS animista 참고
+-->

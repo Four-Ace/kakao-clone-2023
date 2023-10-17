@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Hello Motherfucker</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                height: 100vh;
+                margin: 20px;
+                display: flex;
+                justify-content:space-between;
+                align-items: center; 
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: teal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: white;
+            }
+            #second{
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body>
+        <div>1</div>
+        <div id="second">2</div>
+        <div>3</div>
+    </body>
+</html>
+<!-- flex 는 부모 (여기서 div가 자식, body가 부모) 에게 할당해야한다. 
+    그럼 body 안에 flexbox들을 body에서 제어 할 수 있다.-->
+<!--cross axis : align-items-->
+<!-- flex-direction: column 은 부모의 방향을 뒤바꿈-->
+<!-- flex-wrap 로 화면이 줄어들때 요소의 변형을 제어할 수 있음-->

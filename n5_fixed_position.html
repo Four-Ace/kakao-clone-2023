@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Hello Motherfucker</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                height: 100vh;
+                margin: 20px;
+                position: relative;
+            }
+            div{ 
+                width: 150px;
+                height: 150px;
+                background-color: teal;
+            }
+            #diff{
+                background-color: antiquewhite;
+                width: 200px;
+                position: absolute;
+                bottom:0px;
+                right:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div id="diff"></div>
+    </body>
+</html>
+<!--style -  position fixed는 스크롤을 내려도 고정되어있음-->
+<!--style -  position relative는 top, left, right,bottom 등의 속성을 사용할 수 있음.(초기위치 기준)-->
+<!--style -  position absolute는 가장 가까운 relative부모를 기준으로 동작.-->

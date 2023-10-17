@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <style>
+            :root{
+                --animation-time : 1s;
+                --dot-box-size:3vh;
+            }
+            @keyframes rotate{
+                0%{transform: rotateZ(0deg);}
+                70%{transform: rotateZ(180deg);}
+                100%{transform: rotateZ(180deg);}
+            }
+            @keyframes hig{
+                0%{height: 15vh;}
+                25%{height: 30vh;}
+                50%{height: 15vh;}
+            }
+            body{
+                background-color: rgb(107, 188, 190);
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content:space-around;
+                flex-direction: column;
+            }
+            form{
+                display: flex;
+            }
+            #fdot{
+                animation: rotate var(--animation-time) ease-in-out infinite;
+            }
+            #fbox{
+                display: flex;
+                height: 30vh;
+                align-items: center;
+            }
+            div{
+                background-color: white;
+            }
+            .dot{
+                height: var(--dot-box-size);
+                width: var(--dot-box-size);
+                margin: var(--dot-box-size);
+                border-radius: 50%;
+            }
+            .box{
+                height: 15vh;
+                width: var(--dot-box-size);
+                margin: 1vh;
+                animation: hig var(--animation-time) ease-in-out infinite;
+            }
+            div.box:nth-child(2){
+                animation-delay: 0.1s;
+            }
+            div.box:nth-child(3){
+                animation-delay: 0.2s;
+            }
+            div.box:nth-child(4){
+                animation-delay: 0.3s;
+            }
+            div.box:nth-child(5){
+                animation-delay: 0.4s;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="fdot">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </form>
+        <form id="fbox">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </form>
+
+    </body>
+</html>

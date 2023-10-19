@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            :root{
+                --yellow:#FFCE33;
+            }
+            ul {
+                 list-style-type: none;
+                 margin:0;
+                 padding:3vh;
+            }
+            body{
+                margin:0;
+                width: 70vh;
+                height: 100vh;
+            }
+            .header{
+                display: flex;
+                background-color: #FFCE33;
+                justify-content: space-between;
+                padding: 5vh 2vh;
+                height: 10vh;
+            }
+            .header__text{
+                font-size: 22px;
+                font-weight: bolder;
+            }
+            .search{
+                border-radius:100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 10vh;
+                width: 60vh; 
+                background-color: white;
+                margin-left: 2vh;
+                padding:0vh 3vh;
+                position: relative;
+                bottom:4vh;
+                z-index: 1;
+                box-shadow: 0 5px 7px rgba(0,0,0,0.1);
+            }
+            .search__text{
+                border: none;
+            }
+            .search__text::placeholder{
+                color:rgba(0,0,0,0.1);
+                font-weight: bolder;
+            }
+            .fa-magnifying-glass{
+                color:rgba(0,0,0,0.1);
+            }
+            .frame{
+                margin-bottom: 4vh;
+            }
+            .frame__title{
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            .sec__frame{
+                display: flex;
+                margin-top: 3vh;
+            }
+            .frame__img{
+                height: 32vh;
+                width: 20vh;
+                border-radius: 10px;
+            }
+            .ta__img{
+                height: 28vh;
+                width: 16vh;
+                border-radius: 10px;
+            }
+            .pa__img{
+                height: 27vh;
+                width: 20vh;
+                border-radius: 10px;
+                
+            }
+            .thr__frame{
+                margin-left: 3vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .frame__2title{
+                font-size: 24px;
+                font-weight:500;
+            }
+            .frame__text{
+                font-weight:600;
+                color: rgba(0,0,0,0.1);
+                width: 40vh;
+            }
+            .fa-star{
+                color:var(--yellow);
+            }
+            .fa-star:last-child{
+                color: rgba(0,0,0,0.05);
+            }
+            .bod__button{
+                border: none;
+                padding: 1vh 2vh;
+                border-radius: 5px;
+            }
+            .bod__buy{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 3vh;
+            }
+            .bod__bookmark{
+                height: 6vh;
+                width: 6vh;
+                background-color: var(--yellow);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .bod__buy__button{
+                height: 6.5vh;
+                width: 20vh;
+                border: none;
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+            }
+            .over{
+                overflow-x: scroll;
+            }
+            .ta__content{
+                margin: 0 2vh;
+            }
+            .thr{
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <div class="header__text">library</div>
+            <i class="fa-solid fa-bag-shopping fa-2x"></i>
+        </div>
+        <div class="search">
+            <input class="search__text" type="text" placeholder="Search Books...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+            <div class="contents">
+                <li class="frame">
+                    <div class="frame__title">Book of the day</div>
+                      <div class="sec__frame">
+                        <img class="frame__img" src="https://image.yes24.com/goods/102347474/XL">
+                        <div class="thr__frame">
+                            <div class="frame__2title">No Fixed Abode</div>
+                            <div class="frame__text">Journey Through</div>
+                            <div class="bod__rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="bod__choice">
+                                <button class="bod__button">Journey</button>
+                                <button class="bod__button">Biography</button>
+                            </div>
+                            <div class="bod__buy">
+                                <div class="bod__bookmark">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </div>
+                                <button class="bod__buy__button">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="frame over">
+                    <div class="frame__title">Top Adventures</div>
+                    <div class="sec__frame">
+                        <div class="ta__content">
+                            <img class="ta__img" src="https://image.yes24.com/goods/102347474/XL">
+                            <div class="ta__rate">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                            </div>
+                        </div>
+                        <div class="ta__content">
+                            <img class="ta__img" src="https://image.yes24.com/goods/102347474/XL">
+                            <div class="ta__rate">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                            </div>
+                        </div>
+                        <div class="ta__content">
+                            <img class="ta__img" src="https://image.yes24.com/goods/102347474/XL">
+                            <div class="ta__rate">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                            </div>
+                        </div>
+                        <div class="ta__content">
+                            <img class="ta__img" src="https://image.yes24.com/goods/102347474/XL">
+                            <div class="ta__rate">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="frame">
+                    <div class="frame__title">Popular authors</div>
+                        <div class="sec__frame">
+                            <div>
+                                <img class="pa__img" src="https://image.yes24.com/goods/102347474/XL">
+                            </div>
+                            <div class="thr__frame thr">
+                                <div class="frame__2title">George Raymond Richard Martin</div>
+                                <div class="frame__text">Modern American science fiction writer, screenwriter
+                                    prodicer and editor, winner of many literary awards.
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </li>
+            </div>
+        <ul>
+    </body>
+    <script src="https://kit.fontawesome.com/85d4a578f5.js" crossorigin="anonymous"></script>
+</html>

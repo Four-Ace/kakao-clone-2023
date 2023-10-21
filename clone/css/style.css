@@ -5,10 +5,14 @@
 /* Componants */
 @import "componant/status-bar.css";
 @import "componant/nav-bar.css";
+@import "componant/screen-header.css";
+@import "componant/user-compnent.css";
 
 /* Screens */
 @import "screen/login.css";
+@import "screen/friends.css";
 
 body{
     font-family:"Open Sans";
+    color:#2e363e;
 }

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            display: flex;
+            justify-content: space-around;
+            background-color: #F7F7F7;
+        }
+        .page{
+            background-color: white;
+            border-radius: 30px;
+            width: 40vh;
+        }
+        header{
+            margin-top: 25px;
+            display: flex;
+            justify-content:space-between;
+            padding:0 15px;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .center img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .center_title{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .center_subtitle{
+            font-size: 12px;
+            font-weight: bolder;
+            color: rgba(0,0,0,0.3);
+            margin-top: 5px;
+        }
+        .rate{
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            margin-bottom: 40px;
+        }
+        .rate__button{
+            width: 90px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .rate__button:first-child{
+            background-color: black;
+            color: white;
+        }
+        .rate__button:last-child{
+            box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+        }
+        .rate__button i{
+            margin-right: 5px;
+            background-color: white;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            margin:20px;
+        }
+        .content:nth-child(7){
+            margin-bottom:5px;
+        }
+        .content img{
+            height: 40px;
+            width: 40px;
+            border-radius: 20%;
+        }
+        .content__textbox_cover{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            width: 27vh;
+        }
+        .content__title{
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        .cbox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:10px;
+            background-color: black;
+            border-radius: 30px;
+            padding:5px 15px;
+            box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+        }
+        .cbox__subtitle{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 10px;
+        }
+        .cbox__title{
+            color: white;
+            font-size: 12px;
+            font-weight: bold; 
+        }
+        .cbox i{
+            color: white;
+            margin: 5px;
+        }
+        .music__center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .music__center img{
+            margin: 9vh 0;
+            width: 30vh;
+            height: 30vh;
+            border-radius: 5vh;
+        }
+        .bar{
+            display: flex;
+            margin:5vh;
+            justify-content: space-between;
+        }
+        .bar div{
+            color:rgba(0,0,0,0.3);
+            font-size: 10px;
+        }
+        .bar__left{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 3px solid black;
+            width: 20vh;
+        }
+        .bar__right{
+            display: flex;
+            justify-content: end;
+            border-bottom: 3px solid rgba(0,0,0,0.3);
+            width:10vh;
+        }
+        .bar__dot{
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            top:12px;
+        }
+        .control__bar{
+            padding:20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .control__bar>i:nth-child(4n+1){
+            color:rgba(0, 0, 0, 0.2);
+        }
+        .control__bar>div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+        }
+        .control__bar>div>i{
+            margin-left: 0.5vh;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </header>
+        <div class="center">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg">
+            <div class="center_title">Tyler,Ther Creator</div>
+            <div class="center_subtitle">Rap,Hip-hop</div>
+        </div>
+        <div class="rate">
+            <div class="rate__button">
+                Shuffle
+
+            </div>
+                <div class="rate__button">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>212971</span>
+                </div>
+        </div>
+
+        <div class="content">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg">
+            <div class="content__textbox_cover">
+                <div class="content__textbox">
+                    <div class="center_subtitle">Tyler, the Creator</div>
+                    <div class="content__title">content1</div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg">
+            <div class="content__textbox_cover">
+                <div class="content__textbox">
+                    <div class="center_subtitle">Tyler,Creator</div>
+                    <div class="content__title">content2</div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg">
+            <div class="content__textbox_cover">
+                <div class="content__textbox">
+                    <div class="center_subtitle">Tyler,</div>
+                    <div class="content__title">content3</div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg">
+            <div class="content__textbox_cover">
+                <div class="content__textbox">
+                    <div class="center_subtitle">Tyler, the Creator are</div>
+                    <div class="content__title">content4</div>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="cbox">
+            <div class="cbox__textbox">
+                <div class="cbox__subtitle">Tyler, the Creator</div>
+                <div class="cbox__title">NOVEMBER</div>
+            </div>
+            <div class="icon__box">
+                <i class="fa-solid fa-backward-step xs cf"></i>
+                <i class="fa-solid fa-pause fa-lg"></i>
+                <i class="fa-solid fa-forward-step xs"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </header>
+        <div class="music__center">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg">
+            <div class="center_title">November</div>
+            <div class="center_subtitle">Tyler,Hip-hop</div>
+        </div>
+        <div class="bar">
+            <div class="bar__left">
+                1:56
+                <div class="bar__dot"></div>
+            </div>
+            <div class="bar__right">
+                2:21
+            </div>
+        </div>
+
+        <div class="control__bar">
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-backward-step xs cf"></i>
+            <div>
+                <i class="fa-solid fa-play fa-lg"></i>
+            </div>
+            <i class="fa-solid fa-forward-step xs"></i>
+            <i class="fa-solid fa-shuffle"></i>
+        </div>
+
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/85d4a578f5.js" crossorigin="anonymous"></script>
+</html>

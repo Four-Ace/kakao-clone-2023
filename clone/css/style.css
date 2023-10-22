@@ -8,12 +8,15 @@
 @import "componant/screen-header.css";
 @import "componant/user-compnent.css";
 @import "componant/badge.css";
+@import "componant/icon-row.css";
+@import "componant/alternative-screen-header.css";
 
 /* Screens */
 @import "screen/login.css";
 @import "screen/friends.css";
 @import "screen/find.css";
-
+@import "screen/more.css";
+@import "screen/settings.css";
 body{
     font-family:"Open Sans";
     color:#2e363e;

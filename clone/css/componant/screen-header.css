@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color: white;
     align-items: center;
-    padding: 45px 45px 25px 45px;
+    padding: 45px 25px 25px 25px;
     position: fixed;
     box-sizing:border-box;
 }
@@ -26,5 +26,4 @@
 
 .screen-header__box{
     height: 110px;
-    width: 10px;
 }

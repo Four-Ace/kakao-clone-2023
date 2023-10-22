@@ -1,0 +1,14 @@
+.alt-header{
+    padding: 45px 25px 15px 25px;    
+    background-color: white;
+    z-index: 1;
+}
+
+.alt-header__title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.alt-header__box{
+    height: 100px;
+}

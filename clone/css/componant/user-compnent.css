@@ -44,6 +44,10 @@
     color:var(--gray-text);
 }
 
+.user-component__subtitle i{
+    color:tomato;
+}
+
 .user-component__title--not--bold{
     font-weight: 400;
 }

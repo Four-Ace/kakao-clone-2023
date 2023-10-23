@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css\style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - 삼겹살</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar chat__status">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:53</span>
+        </div>
+        
+        <div class="status-bar__column">
+            <span>999%</span>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header alt-header chat__status">
+        <div class="alt-header__column">
+            <a href="chats.html">
+            <i class="fa-solid fa-angle-left fa-lg"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">삼겹살</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-bars fa-lg"></i></span>
+        </div>
+    </header>
+
+    <div class="alt-header__box"></div>
+
+    <main class="main-screen main-chat">
+        
+        <div class="chat_timestamp">
+            Sunday, June 28, 2020
+        </div>
+
+        <div class="message-row message-row--partner">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg"/>
+            <div class="message-row__content">
+                <span class="message__author">삼겹살</span>
+                <div class="message__info">
+                    <span class="message__bubble">삼겹살에 소주 한잔?</span>
+                    <span class="message__time">7:25</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message__bubble">내가 구워줄게</span>
+                    <span class="message__time">7:26</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-row message-row--partner">
+            <img src="https://ai.esmplus.com/foodjang01/images/221106957_b_1.jpg"/>
+            <div class="message-row__content">
+                <span class="message__author">삼겹살</span>
+                <div class="message__info">
+                    <span class="message__bubble">진짜 맛있겠다</span>
+                    <span class="message__time">7:30</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a massage...">
+            <i class="fa-regular fa-face-smile fa-lg"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+    <div id="no-mobile">
+        <span>Your Screen is Too BiG!</span>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/85d4a578f5.js" crossorigin="anonymous"></script>
+</html>

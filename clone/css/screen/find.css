@@ -94,3 +94,7 @@ color:var(--gray-text);
 .open-post__heart-count span{
     margin-left: 3px;
 }
+.open-post__photo:hover i{
+    will-change: transform;
+    animation: heartbeat 1s linear infinite;
+}

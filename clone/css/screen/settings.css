@@ -4,6 +4,7 @@
     font-size: 17px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     transition: all 0.5s ease-in-out;
 }
 
@@ -20,4 +21,8 @@
     margin-right: 15px;
     font-size: 22px;
     transition: all 0.5s ease-in-out;
+}
+
+.settings__setting-column:last-child{
+    color: var(--gray-text);
 }

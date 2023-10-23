@@ -27,3 +27,7 @@
 .screen-header__box{
     height: 110px;
 }
+
+.screen-header__icons>span i:hover{
+    animation: crazyicon 0.3s ease-in-out infinite;
+}

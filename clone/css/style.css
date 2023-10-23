@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Metal+Mania&family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
 @import "variables.css";
+@import "animation.css";
 
 /* Componants */
 @import "componant/status-bar.css";
@@ -10,6 +11,7 @@
 @import "componant/badge.css";
 @import "componant/icon-row.css";
 @import "componant/alternative-screen-header.css";
+@import "componant/no-mobile.css";
 
 /* Screens */
 @import "screen/login.css";
@@ -17,6 +19,8 @@
 @import "screen/find.css";
 @import "screen/more.css";
 @import "screen/settings.css";
+@import "screen/chat.css";
+
 body{
     font-family:"Open Sans";
     color:#2e363e;

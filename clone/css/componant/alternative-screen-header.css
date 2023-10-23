@@ -10,5 +10,30 @@
 }
 
 .alt-header__box{
+    display: flex;
     height: 100px;
+}
+
+.alt-header__column{
+    width: 33%;
+}
+
+.alt-header__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.alt-header__column:last-child{
+    display: flex;
+    justify-content: end;
+}
+
+.alt-header__column span:last-child{
+    margin-left: 20px;
+}
+
+
+.alt-header div i:hover{
+    will-change: transform;
+    animation: crazyicon 0.3s ease-in-out infinite;
 }
